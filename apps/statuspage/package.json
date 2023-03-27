@@ -1,0 +1,27 @@
+{
+	"name": "statuspage",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"start": "cd dist && node --enable-source-maps index.js",
+		"build": "tsc && devScript --copyOnly",
+		"dev": "devScript"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/cron": "^2.0.1",
+		"@types/debug": "^4.1.7",
+		"dotenv": "^16.0.3",
+		"ts-devscript": "^3.0.7",
+		"typescript": "^5.0.2"
+	},
+	"dependencies": {
+		"cron": "^2.3.0",
+		"debug": "^4.3.4",
+		"ky": "^0.33.3",
+		"statuspage.ts": "^0.1.0"
+	}
+}

@@ -1,0 +1,26 @@
+name: CD Docker
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published]
+permissions:
+  packages: write
+jobs:
+  test:
+    name: Test
+    uses: ./.github/workflows/CI.yml
+  build-latest:
+    needs: test
+    if: ${{ github.event_name == 'push' }}
+    uses: "Recodive/Workflows/.github/workflows/CD Docker.yml@main"
+    with:
+      file: Docker/statuspage.dockerfile
+      context: .
+      tags: premid/statuspage
+      version: latest
+    secrets:
+      GH_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: read
+      packages: write
