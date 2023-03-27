@@ -8,6 +8,7 @@ COPY pnpm-lock.yaml ./
 RUN pnpm fetch
 
 COPY . ./
+RUN pnpm install --offline
 RUN pnpm --filter=statuspage build
 RUN pnpm --filter=statuspage --prod deploy pruned
 
