@@ -21,10 +21,10 @@ const statuspage = new StatuspageApi(process.env.STATUSPAGE_API_TOKEN);
 
 let pingResultsLast5Minutes: { timestamp: number; value: number }[] = [];
 
-new CronJob("*/30 * * * * *", async () => {
+const pingJob = new CronJob("*/30 * * * * *", async () => {
 	try {
 		let duration = Date.now();
-		await ky.get("https://api.premid.app/v3?query=%7B__typename%7D", {
+		await ky.get("https://api.premid.app/ping", {
 			timeout: 5000,
 		});
 
@@ -44,9 +44,12 @@ new CronJob("*/30 * * * * *", async () => {
 			error1.response.statusText
 		);
 	}
-}).start();
+});
 
 new CronJob("*/5 * * * *", async () => {
+	//* Temporarily suspend the job
+	pingJob.stop();
+
 	const results = pingResultsLast5Minutes;
 	pingResultsLast5Minutes = [];
 
@@ -62,4 +65,10 @@ new CronJob("*/5 * * * *", async () => {
 
 	if (result.isOk) log("Successfully submitted metric data!");
 	else log("Failed to submit metric data! %O", result.error);
+
+	//* Start job again
+	pingJob.start();
 }).start();
+
+//* Start job
+pingJob.start();
