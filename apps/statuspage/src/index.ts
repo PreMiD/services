@@ -1,6 +1,6 @@
 import { CronJob } from "cron";
 import debug from "debug";
-import ky, { HTTPError } from "ky";
+import ky from "ky";
 import StatuspageApi from "statuspage.ts";
 
 if (process.env.NODE_ENV === undefined) {
@@ -22,28 +22,34 @@ const statuspage = new StatuspageApi(process.env.STATUSPAGE_API_TOKEN);
 let pingResultsLast5Minutes: { timestamp: number; value: number }[] = [];
 
 const pingJob = new CronJob("*/30 * * * * *", async () => {
-	try {
-		let duration = Date.now();
-		await ky.get("https://api.premid.app/ping", {
-			timeout: 5000,
-		});
+	let duration = 0;
 
-		duration = Date.now() - duration;
-		pingResultsLast5Minutes.push({
-			timestamp: Math.floor(Date.now() / 1000),
-			value: duration,
-		});
+	const result = await ky.get("https://api.premid.app/ping", {
+		hooks: {
+			beforeRequest: [
+				() => {
+					duration = performance.now();
+				},
+			],
+			afterResponse: [
+				(_, _1, result) => {
+					if (result.ok) duration = Math.floor(performance.now() - duration);
+				},
+			],
+		},
+		timeout: 5000,
+		throwHttpErrors: false,
+	});
 
-		log("Successfully pinged API! %dms", duration);
-	} catch (error) {
-		const error1 = error as HTTPError;
+	if (!result.ok)
+		return log("Failed to ping API! %d %s", result.status, result.statusText);
 
-		log(
-			"Failed to ping API! %d %s",
-			error1.response.status,
-			error1.response.statusText
-		);
-	}
+	pingResultsLast5Minutes.push({
+		timestamp: Math.floor(Date.now() / 1000),
+		value: duration,
+	});
+
+	log("Successfully pinged API! %dms", duration);
 });
 
 new CronJob("*/5 * * * *", async () => {
