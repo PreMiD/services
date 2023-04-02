@@ -32,8 +32,8 @@ importers:
         specifier: ^0.33.3
         version: 0.33.3
       statuspage.ts:
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.0
+        version: 0.2.0
     devDependencies:
       '@types/cron':
         specifier: ^2.0.1
@@ -2712,8 +2712,8 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: true
 
-  /statuspage.ts@0.1.0:
-    resolution: {integrity: sha512-ng8+0/ASNWDtKVhR2R0WEB30V+GojFRTIFAqMo/b5t5+M9/E+0rtJWyzWaq11tcdxIsEgPSivkP2Gh7SJIv1Jg==}
+  /statuspage.ts@0.2.0:
+    resolution: {integrity: sha512-n0cn3WmFfopEIBXp9KGg52rAtmvTT2j63KhGcvxuM55cL/5g5glG/JonAf5QmjBCzxMbuQBNc/Yl/3t7sp8/0A==}
     dependencies:
       ky: 0.33.3
       ky-universal: 0.11.0(ky@0.33.3)
