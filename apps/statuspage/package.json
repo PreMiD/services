@@ -21,7 +21,7 @@
 	"dependencies": {
 		"cron": "^2.3.0",
 		"debug": "^4.3.4",
-		"ky": "^0.33.3",
+		"ky": "^1.0.0",
 		"statuspage.ts": "^0.2.0"
 	}
 }
