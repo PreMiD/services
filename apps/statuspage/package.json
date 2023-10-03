@@ -19,7 +19,7 @@
 		"typescript": "^5.0.2"
 	},
 	"dependencies": {
-		"cron": "^2.3.0",
+		"cron": "^3.0.0",
 		"debug": "^4.3.4",
 		"ky": "^1.0.0",
 		"statuspage.ts": "^0.2.0"
