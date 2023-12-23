@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM --platform=${BUILDPLATFORM} node:lts-alpine
 
 WORKDIR /app
 
@@ -12,7 +12,7 @@ RUN pnpm install --offline
 RUN pnpm --filter=statuspage build
 RUN pnpm --filter=statuspage --prod deploy pruned
 
-FROM node:lts-alpine
+FROM --platform=${BUILDPLATFORM} node:lts-alpine
 
 WORKDIR /app
 
