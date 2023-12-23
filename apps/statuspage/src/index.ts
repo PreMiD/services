@@ -24,22 +24,25 @@ let pingResultsLast5Minutes: { timestamp: number; value: number }[] = [];
 const pingJob = new CronJob("*/30 * * * * *", async () => {
 	let duration = 0;
 
-	const result = await ky.get("https://api.premid.app/ping", {
-		hooks: {
-			beforeRequest: [
-				() => {
-					duration = performance.now();
-				},
-			],
-			afterResponse: [
-				(_, _1, result) => {
-					if (result.ok) duration = Math.floor(performance.now() - duration);
-				},
-			],
-		},
-		timeout: 5000,
-		throwHttpErrors: false,
-	});
+	const result = await ky.get(
+		process.env.API_HOST ?? "https://api.premid.app/ping",
+		{
+			hooks: {
+				beforeRequest: [
+					() => {
+						duration = performance.now();
+					},
+				],
+				afterResponse: [
+					(_, _1, result) => {
+						if (result.ok) duration = Math.floor(performance.now() - duration);
+					},
+				],
+			},
+			timeout: 5000,
+			throwHttpErrors: false,
+		}
+	);
 
 	if (!result.ok)
 		return log("Failed to ping API! %d %s", result.status, result.statusText);
