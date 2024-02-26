@@ -34,7 +34,7 @@ importers:
         version: 4.3.4
       ky:
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.2.0
       statuspage.ts:
         specifier: ^0.2.0
         version: 0.2.0
@@ -2065,8 +2065,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /ky@1.0.0:
-    resolution: {integrity: sha512-ptUup6btycj2IXLL/L5Bh/QC9ghYC2k/BsnnSf0ccEap8FpCvJ32FL5s5Potb8NkH6HOTdnVGmyI1wkHZ3mfEQ==}
+  /ky@1.2.0:
+    resolution: {integrity: sha512-dnPW+T78MuJ9tLAiF/apJV7bP7RRRCARXQxsCmsWiKLXqGtMBOgDVOFRYzCAfNe/OrRyFyor5ESgvvC+QWEqOA==}
     engines: {node: '>=18'}
     dev: false
 
