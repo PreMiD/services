@@ -13,10 +13,10 @@ importers:
         version: 1.1.0(@commitlint/lint@17.8.1)
       '@recodive/eslint-config':
         specifier: ^1.2.0
-        version: 1.2.0(@rushstack/eslint-patch@1.10.1)(eslint@8.35.0)
+        version: 1.2.0(@rushstack/eslint-patch@1.10.2)(eslint@8.35.0)
       '@rushstack/eslint-patch':
         specifier: ^1.2.0
-        version: 1.10.1
+        version: 1.10.2
       eslint:
         specifier: ^8.35.0
         version: 8.35.0
@@ -414,13 +414,13 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@recodive/eslint-config@1.2.0(@rushstack/eslint-patch@1.10.1)(eslint@8.35.0):
+  /@recodive/eslint-config@1.2.0(@rushstack/eslint-patch@1.10.2)(eslint@8.35.0):
     resolution: {integrity: sha512-Z8pkYJ8+9y+zRYAHEPgKbWY6CqLB5aq8BvnEt0AOeiQuT2GHu6UW/nyrQcJUadnBotKvSAXBsbeuypCNyfRZ5Q==}
     peerDependencies:
       '@rushstack/eslint-patch': ^1.2.0
       eslint: '>= 3'
     dependencies:
-      '@rushstack/eslint-patch': 1.10.1
+      '@rushstack/eslint-patch': 1.10.2
       '@typescript-eslint/eslint-plugin': 5.54.1(@typescript-eslint/parser@5.54.1)(eslint@8.35.0)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.54.1(eslint@8.35.0)(typescript@4.9.5)
       eslint: 8.35.0
@@ -434,8 +434,8 @@ packages:
       - supports-color
     dev: true
 
-  /@rushstack/eslint-patch@1.10.1:
-    resolution: {integrity: sha512-S3Kq8e7LqxkA9s7HKLqXGTGck1uwis5vAXan3FnU5yw1Ec5hsSGnq4s/UCaSqABPOnOTg7zASLyst7+ohgWexg==}
+  /@rushstack/eslint-patch@1.10.2:
+    resolution: {integrity: sha512-hw437iINopmQuxWPSUEvqE56NCPsiU8N4AYtfHmJFckclktzK9YQJieD3XkDCDH4OjL+C7zgPUh73R/nrcHrqw==}
     dev: true
 
   /@sindresorhus/is@0.14.0:
