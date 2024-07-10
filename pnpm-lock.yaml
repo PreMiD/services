@@ -53,7 +53,7 @@ importers:
         version: 3.0.7
       typescript:
         specifier: ^5.0.2
-        version: 5.5.2
+        version: 5.5.3
 
 packages:
 
@@ -1643,8 +1643,8 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
-  typescript@5.5.2:
-    resolution: {integrity: sha512-NcRtPEOsPFFWjobJEtfihkLCZCXZt/os3zf8nTxjVH3RvTSxjrCamJpbExGvYOF+tFHc3pA65qpdwPbzjohhew==}
+  typescript@5.5.3:
+    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3375,7 +3375,7 @@ snapshots:
 
   typescript@4.9.5: {}
 
-  typescript@5.5.2: {}
+  typescript@5.5.3: {}
 
   typical@4.0.0: {}
 
