@@ -34,7 +34,7 @@ importers:
         version: 4.3.6
       ky:
         specifier: ^1.0.0
-        version: 1.7.0
+        version: 1.7.1
       statuspage.ts:
         specifier: ^0.2.0
         version: 0.2.0(web-streams-polyfill@3.2.1)
@@ -1065,8 +1065,8 @@ packages:
     resolution: {integrity: sha512-CasD9OCEQSFIam2U8efFK81Yeg8vNMTBUqtMOHlrcWQHqUX3HeCl9Dr31u4toV7emlH8Mymk5+9p0lL6mKb/Xw==}
     engines: {node: '>=14.16'}
 
-  ky@1.7.0:
-    resolution: {integrity: sha512-g+S6ZMESSMuxrrbcDioBKSjBj8Xvam2WmLso+q1Ub7TTYCGS68XbSEM+eA3VSTmXJfR1uQjsTooC2tCsC3bW6g==}
+  ky@1.7.1:
+    resolution: {integrity: sha512-KJ/IXXkFhTDqxcN8wKqMXk1/UoOpc0UnOB6H7QcqlPInh/M2B5Mlj+i9exez1w4RSwJhNFmHiUDPriAYFwb5VA==}
     engines: {node: '>=18'}
 
   leasot@12.5.0:
@@ -2839,7 +2839,7 @@ snapshots:
 
   ky@0.33.3: {}
 
-  ky@1.7.0: {}
+  ky@1.7.1: {}
 
   leasot@12.5.0:
     dependencies:
