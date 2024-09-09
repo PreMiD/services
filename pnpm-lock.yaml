@@ -31,7 +31,7 @@ importers:
         version: 3.1.7
       debug:
         specifier: ^4.3.4
-        version: 4.3.6
+        version: 4.3.7
       ky:
         specifier: ^1.0.0
         version: 1.7.2
@@ -545,8 +545,8 @@ packages:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
     engines: {node: '>= 12'}
 
-  debug@4.3.6:
-    resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
+  debug@4.3.7:
+    resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1191,8 +1191,8 @@ packages:
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
-  ms@2.1.2:
-    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
   mute-stream@0.0.8:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
@@ -1857,7 +1857,7 @@ snapshots:
   '@eslint/eslintrc@2.0.0':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.6
+      debug: 4.3.7
       espree: 9.4.1
       globals: 13.20.0
       ignore: 5.2.4
@@ -1873,7 +1873,7 @@ snapshots:
   '@humanwhocodes/config-array@0.11.8':
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
-      debug: 4.3.6
+      debug: 4.3.7
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -1963,7 +1963,7 @@ snapshots:
       '@typescript-eslint/scope-manager': 5.54.1
       '@typescript-eslint/type-utils': 5.54.1(eslint@8.35.0)(typescript@4.9.5)
       '@typescript-eslint/utils': 5.54.1(eslint@8.35.0)(typescript@4.9.5)
-      debug: 4.3.6
+      debug: 4.3.7
       eslint: 8.35.0
       grapheme-splitter: 1.0.4
       ignore: 5.2.4
@@ -1981,7 +1981,7 @@ snapshots:
       '@typescript-eslint/scope-manager': 5.54.1
       '@typescript-eslint/types': 5.54.1
       '@typescript-eslint/typescript-estree': 5.54.1(typescript@4.9.5)
-      debug: 4.3.6
+      debug: 4.3.7
       eslint: 8.35.0
     optionalDependencies:
       typescript: 4.9.5
@@ -1997,7 +1997,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 5.54.1(typescript@4.9.5)
       '@typescript-eslint/utils': 5.54.1(eslint@8.35.0)(typescript@4.9.5)
-      debug: 4.3.6
+      debug: 4.3.7
       eslint: 8.35.0
       tsutils: 3.21.0(typescript@4.9.5)
     optionalDependencies:
@@ -2011,7 +2011,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 5.54.1
       '@typescript-eslint/visitor-keys': 5.54.1
-      debug: 4.3.6
+      debug: 4.3.7
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.6.0
@@ -2310,9 +2310,9 @@ snapshots:
 
   data-uri-to-buffer@4.0.1: {}
 
-  debug@4.3.6:
+  debug@4.3.7:
     dependencies:
-      ms: 2.1.2
+      ms: 2.1.3
 
   decamelize-keys@1.1.1:
     dependencies:
@@ -2450,7 +2450,7 @@ snapshots:
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.6
+      debug: 4.3.7
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.1.1
@@ -2954,7 +2954,7 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  ms@2.1.2: {}
+  ms@2.1.3: {}
 
   mute-stream@0.0.8: {}
 
@@ -3337,7 +3337,7 @@ snapshots:
       chokidar: 3.5.3
       command-line-args: 5.2.1
       compare-versions: 5.0.3
-      debug: 4.3.6
+      debug: 4.3.7
       displayastree: 2.0.0
       fast-glob: 3.2.12
       fs-extra: 10.1.0
@@ -3398,7 +3398,7 @@ snapshots:
 
   vue-eslint-parser@9.1.0(eslint@8.35.0):
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7
       eslint: 8.35.0
       eslint-scope: 7.1.1
       eslint-visitor-keys: 3.3.0
