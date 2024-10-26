@@ -41,7 +41,7 @@ importers:
     devDependencies:
       '@types/cron':
         specifier: ^2.0.1
-        version: 2.4.1
+        version: 2.4.3
       '@types/debug':
         specifier: ^4.1.7
         version: 4.1.12
@@ -193,8 +193,8 @@ packages:
     resolution: {integrity: sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==}
     engines: {node: '>=6'}
 
-  '@types/cron@2.4.1':
-    resolution: {integrity: sha512-0Gf1VVhYvpWaSD/eCo/eDxc7F/KmeKxnYWsb2vDrbr+4kMSzl+dYB3G0j24jr61CTEvul4y3eN70u+PTOMpeNQ==}
+  '@types/cron@2.4.3':
+    resolution: {integrity: sha512-ViRBkoZD9Rk0hGeMdd2GHGaOaZuH9mDmwsE5/Zo53Ftwcvh7h9VJc8lIt2wdgEwS4EW5lbtTX6vlE0idCLPOyA==}
     deprecated: This is a stub types definition. cron provides its own type definitions, so you do not need this installed.
 
   '@types/debug@4.1.12':
@@ -1928,7 +1928,7 @@ snapshots:
     dependencies:
       defer-to-connect: 1.1.3
 
-  '@types/cron@2.4.1':
+  '@types/cron@2.4.3':
     dependencies:
       cron: 3.1.7
 
