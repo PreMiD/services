@@ -28,7 +28,7 @@ importers:
     dependencies:
       cron:
         specifier: ^3.0.0
-        version: 3.1.7
+        version: 3.1.8
       debug:
         specifier: ^4.3.4
         version: 4.3.7
@@ -525,8 +525,8 @@ packages:
       typescript:
         optional: true
 
-  cron@3.1.7:
-    resolution: {integrity: sha512-tlBg7ARsAMQLzgwqVxy8AZl/qlTc5nibqYwtNGoCrd+cV+ugI+tvZC1oT/8dFH8W455YrywGykx/KMmAqOr7Jw==}
+  cron@3.1.8:
+    resolution: {integrity: sha512-45bqmAOSd/XB5JJWfV1W59fFEzqgNNWmOYQZVcw0sfyQqU35HFdVfTsr2xzlqWoTAfspRrvK0lSSLj8Pj9YmpQ==}
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -1139,8 +1139,8 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
-  luxon@3.4.4:
-    resolution: {integrity: sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==}
+  luxon@3.5.0:
+    resolution: {integrity: sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ==}
     engines: {node: '>=12'}
 
   map-obj@1.0.1:
@@ -1930,7 +1930,7 @@ snapshots:
 
   '@types/cron@2.4.1':
     dependencies:
-      cron: 3.1.7
+      cron: 3.1.8
 
   '@types/debug@4.1.12':
     dependencies:
@@ -2294,10 +2294,10 @@ snapshots:
     optionalDependencies:
       typescript: 4.9.5
 
-  cron@3.1.7:
+  cron@3.1.8:
     dependencies:
       '@types/luxon': 3.4.2
-      luxon: 3.4.4
+      luxon: 3.5.0
 
   cross-spawn@7.0.3:
     dependencies:
@@ -2906,7 +2906,7 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  luxon@3.4.4: {}
+  luxon@3.5.0: {}
 
   map-obj@1.0.1: {}
 
