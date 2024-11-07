@@ -28,7 +28,7 @@ importers:
     dependencies:
       cron:
         specifier: ^3.0.0
-        version: 3.1.8
+        version: 3.1.9
       debug:
         specifier: ^4.3.4
         version: 4.3.7
@@ -525,8 +525,8 @@ packages:
       typescript:
         optional: true
 
-  cron@3.1.8:
-    resolution: {integrity: sha512-45bqmAOSd/XB5JJWfV1W59fFEzqgNNWmOYQZVcw0sfyQqU35HFdVfTsr2xzlqWoTAfspRrvK0lSSLj8Pj9YmpQ==}
+  cron@3.1.9:
+    resolution: {integrity: sha512-eNZu+YhLRHLxNJNqZgYuy8mXhzMV0XXmOSh+Ls2j1yTeQLCQ04ya7oNpujxwl4lEyck1fcVa1aRVZ+T4tAC7SA==}
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -1930,7 +1930,7 @@ snapshots:
 
   '@types/cron@2.4.1':
     dependencies:
-      cron: 3.1.8
+      cron: 3.1.9
 
   '@types/debug@4.1.12':
     dependencies:
@@ -2294,7 +2294,7 @@ snapshots:
     optionalDependencies:
       typescript: 4.9.5
 
-  cron@3.1.8:
+  cron@3.1.9:
     dependencies:
       '@types/luxon': 3.4.2
       luxon: 3.5.0
