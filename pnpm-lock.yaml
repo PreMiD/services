@@ -13,10 +13,10 @@ importers:
         version: 1.8.4(@commitlint/lint@18.6.1)(@types/node@18.15.0)(typescript@4.9.5)
       '@recodive/eslint-config':
         specifier: ^1.2.0
-        version: 1.2.0(@rushstack/eslint-patch@1.10.5)(eslint@8.35.0)
+        version: 1.2.0(@rushstack/eslint-patch@1.11.0)(eslint@8.35.0)
       '@rushstack/eslint-patch':
         specifier: ^1.2.0
-        version: 1.10.5
+        version: 1.11.0
       eslint:
         specifier: ^8.35.0
         version: 8.35.0
@@ -182,8 +182,8 @@ packages:
       '@rushstack/eslint-patch': ^1.2.0
       eslint: '>= 3'
 
-  '@rushstack/eslint-patch@1.10.5':
-    resolution: {integrity: sha512-kkKUDVlII2DQiKy7UstOR1ErJP8kUKAQ4oa+SQtM0K+lPdmmjj0YnnxBgtTVYH7mUKtbsxeFC9y0AmK7Yb78/A==}
+  '@rushstack/eslint-patch@1.11.0':
+    resolution: {integrity: sha512-zxnHvoMQVqewTJr/W4pKjF0bMGiKJv1WX7bSrkl46Hg0QjESbzBROWK0Wg4RphzSOS5Jiy7eFimmM3UgMrMZbQ==}
 
   '@sindresorhus/is@0.14.0':
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
@@ -1906,9 +1906,9 @@ snapshots:
       - '@types/node'
       - typescript
 
-  '@recodive/eslint-config@1.2.0(@rushstack/eslint-patch@1.10.5)(eslint@8.35.0)':
+  '@recodive/eslint-config@1.2.0(@rushstack/eslint-patch@1.11.0)(eslint@8.35.0)':
     dependencies:
-      '@rushstack/eslint-patch': 1.10.5
+      '@rushstack/eslint-patch': 1.11.0
       '@typescript-eslint/eslint-plugin': 5.54.1(@typescript-eslint/parser@5.54.1(eslint@8.35.0)(typescript@4.9.5))(eslint@8.35.0)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.54.1(eslint@8.35.0)(typescript@4.9.5)
       eslint: 8.35.0
@@ -1921,7 +1921,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@rushstack/eslint-patch@1.10.5': {}
+  '@rushstack/eslint-patch@1.11.0': {}
 
   '@sindresorhus/is@0.14.0': {}
 
