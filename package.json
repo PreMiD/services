@@ -13,7 +13,7 @@
 		"@recodive/eslint-config": "^1.2.0",
 		"@rushstack/eslint-patch": "^1.2.0",
 		"eslint": "^8.35.0",
-		"prettier": "^2.8.4"
+		"prettier": "^3.0.0"
 	},
 	"packageManager": "pnpm@10.9.0"
 }
